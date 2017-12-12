@@ -1,0 +1,36 @@
+@import '../../../../theme/variables.less';
+
+.detailPage {
+  height: calc(~"100vh - @{menu_height}");
+  background: red;
+  overflow: auto;
+  padding: 50px;
+  background-color: #fff;
+  color: #555;
+  z-index: 99;
+  // border: 1px solid green;
+  .card {
+    margin: 10px
+  }
+
+}
+.detailContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.scrollDown{
+  font-size: .5rem;
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  color:black;
+  border:1px solid rgba(102,217,239, .5);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}

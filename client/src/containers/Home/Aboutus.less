@@ -1,0 +1,44 @@
+.profile {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) and (min-width: 432px) {
+	.owl-theme .owl-nav{
+		display: none;
+	}
+}
+
+.owl-theme .owl-nav .owl-prev,.owl-theme .owl-nav .owl-next{
+	position: absolute;
+	top: -500px;
+	transform: translateY(-50%);
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+	opacity: 0.5;
+	transition: all 0.3s;
+}
+.owl-theme .owl-nav .owl-prev:hover,.owl-theme .owl-nav .owl-next:hover{
+	opacity: 1;
+}
+
+.owl-theme .owl-nav .owl-prev{
+	left: 20px;
+  top: -135px;
+	background-image: url("../../static/images/slider-arrows.png");
+	background-size: cover;
+	background-position: right;
+}
+.owl-theme .owl-nav .owl-next{
+	right: 20px;
+  top: -135px;
+	background-image: url("../../static/images/slider-arrows.png");
+	background-size: cover;
+	background-position: left;
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "ALAN",
+    "title": "RD.",
+    "photo": "http://res.cloudinary.com/de8zvhth3/image/upload/v1509908802/Alan_qm9pw9.jpg",
+    "Expertise": "React, Cordova, nodejs",
+    "Introduction": "前端工程師，喜歡研究新的技術，也喜歡用程式玩出更多有趣的UI跟效果，最近在進一步學習後端與資料庫！",
+    "github": "https://github.com/chnbohwr"
+  },
+  {
+    "name": "RAY",
+    "title": "DESIGNER.",
+    "photo": "http://res.cloudinary.com/de8zvhth3/image/upload/v1509940655/%E5%A4%A7%E9%A0%AD%E8%B2%BC_cznxeb.jpg",
+    "Expertise": "JavaScript, React, NodeJS",
+    "Introduction": "一頭栽進前端世界的小小工程師，喜歡玩各種前端新鮮事物。 目前專注於ReactJS，使用過Flux、Redux、Mobx等單向資料流進行專案開發。",
+    "github": "https://github.com/bbandydd"
+  },
+  {
+    "name": "ALEX",
+    "title": "UI/UX.",
+    "photo": "http://res.cloudinary.com/de8zvhth3/image/upload/v1509908895/Alex_uybeu1.jpg",
+    "Expertise": "",
+    "Introduction": "在團隊中擔任繪師，同時也是竹格動畫創辦人，來自新竹，擅長插畫與平面設計，喜歡嘗試有趣的事。",
+    "github": "https://github.com/TKDchampion"
+  },
+  {
+    "name": "KEN",
+    "title": "3D MODEL.",
+    "photo": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510719028/Ken.jpg",
+    "Expertise": "React, Cordova, nodejs",
+    "Introduction": "大家好，我是巨凱，大學戲劇社社長，這愛攝影製片以及建築設計，目前在團隊中擔任3D建模的課程講師",
+    "github": "https://github.com/chnbohwr"
+  },
+  {
+    "name": "ALIEN",
+    "title": "PHOTOGRAPHER.",
+    "photo": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510719030/ALIEN.jpg",
+    "Expertise": "JavaScript, React, NodeJS",
+    "Introduction": "大家好，我叫AC，目前負責英文易開罐以及LIVESHARE的攝影以及影片剪輯，同時在學校也是前任電影社社長。",
+    "github": "https://github.com/bbandydd"
+  },
+  {
+    "name": "SIN",
+    "title": "PM.",
+    "photo": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510719854/Sin.jpg",
+    "Expertise": "",
+    "Introduction": "目前是一個樂團的BASS手，在團隊中除了負責出圖我也是工程師與設計師之前的橋樑。",
+    "github": "https://github.com/TKDchampion"
+  },
+    {
+    "name": "PAUL",
+    "title": "HR.",
+    "photo": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510719853/LEO.jpg",
+    "Expertise": "React, Cordova, nodejs",
+    "Introduction": "我是撰中華，熱愛重訊以及籃球，目前負責網路社群的行銷以及企劃文案！",
+    "github": "https://github.com/chnbohwr"
+  },
+  {
+    "name": "CHAO",
+    "title": "RD.",
+    "photo": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510719861/CHAO.jpg",
+    "Expertise": "JavaScript, React, NodeJS",
+    "Introduction": "後端工程師，喜歡研究各種資料的流動及大數據。 目前專注於NodeJS，也使用過GarphQL、Redux、CMS等工具進行專案開發。",
+    "github": "https://github.com/bbandydd"
+  },
+  {
+    "name": "ENOCH",
+    "title": "CO-FUNDER",
+    "photo": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510720821/Enoch_ma0rlc.jpg",
+    "Expertise": "",
+    "Introduction": "我是團隊創辦人，喜歡吃飯跟睡覺，我沒什麼特別專長，但我有很多靈感以及點子，也希望可以結交更多各界的好手。",
+    "github": "https://github.com/TKDchampion"
+  }
+]
