@@ -56,10 +56,9 @@ passport.use(
     	clientID: keys.googleClientID,
     	clientSecret: keys.googleClientSecret,
       callbackURL: '/auth/google/callback',
-      //跟GoogleStrategy 說如果 our request runs through any proxy, it can calculate callback url correctly 
       proxy: true
   	}, 
-		async (accessToken, refreshToken, profile, done) => {
+		(accessToken, refreshToken, profile, done) => {
       User.findOne({ googleId: profile.id })
         .then((existingUser) => {
           //已經有record with profile id
