@@ -71,7 +71,7 @@ export default class Header extends Component {
                 </a>
               </li>
               <li>
-                <a href="" className="greenline">
+                <a href="/auth/google" className="greenline">
                   <span className="grey-text text-darken-4">Log in</span>
                 </a>
               </li>

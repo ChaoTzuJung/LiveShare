@@ -74,7 +74,7 @@ export default class Header2 extends Component {
             {/* 右邊的按鈕 */}
             <ul className="right hide-on-med-and-down">
               <li>
-                <a className="dropdown-button grey-text text-darken-4 item">Log in</a>
+                <a className="dropdown-button grey-text text-darken-4 item" href="/auth/google">Log in</a>
               </li>
               <li>
                 <a className="dropdown-button grey-text text-darken-4 item" data-activates="comp-menu" data-beloworigin="true" data-constrainwidth="false">Sign up<i className="material-icons right icon-grey-darken-4">arrow_drop_down</i></a>
@@ -122,7 +122,7 @@ export default class Header2 extends Component {
         <ul className="side-nav" id="side-out">
           <li><a><i className="material-icons icon-grey-darken-4">search</i></a></li>
           <li><Link to="Aboutus" className="dropdown-button grey-text text-darken-4">About us</Link></li>
-          <li><a>Log in</a></li>
+          <li><a href="/auth/google">Log in</a></li>
           <li><a className="dropdown-button" data-activates="mob-menu" data-beloworigin="true">Sign up<i className="material-icons right">arrow_drop_down</i></a></li>
         </ul>
       </div>

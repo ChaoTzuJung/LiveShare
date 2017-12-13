@@ -69,7 +69,7 @@ passport.use(
              //沒有record with profile id，那就創一個吧
             new User({ googleId: profile.id })
               .save()
-              //創造傳遞新的user model給mongodb並存取
+              //創造傳遞新的user model給mongodb並存
               .then((user) => done(null, user));
           }
         })
