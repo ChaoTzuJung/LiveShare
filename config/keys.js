@@ -1,8 +1,8 @@
-module.exports = {
-  googleClientID: '205800509643-qmm1du5d9l2ruefaljukpt97e96c964q.apps.googleusercontent.com',
-  googleClientSecret: 'POgmjfoIFV6q9_VYJvUE8htz',
-  facebookClientID: '2010340079244854',
-  facebookClientSecret: '1f43e279163123c189e79e632e9f48d8',
-  mongoURI: 'mongodb://username:password@ds044907.mlab.com:44907/liveshare_dev',
-  cookieKey: 'qazwsxedcrfvtgbyhnujmikqazwsxedcrfvtgb'
+// key.js - Figure out what set of credentials to return
+if(process.env.NODE_ENV === 'production') {
+  //we are in production - return the prod set of keys
+  module.exports = require('./prod');
+}else {
+  //we are in developer - return the dev keys
+  module.exports = require('./dev');
 }
