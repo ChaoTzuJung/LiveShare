@@ -55,8 +55,7 @@ passport.use(
     {
     	clientID: keys.googleClientID,
     	clientSecret: keys.googleClientSecret,
-    	callbackURL: '/auth/google/callback',
-			proxy: true
+    	callbackURL: '/auth/google/callback'
   	}, 
 		async (accessToken, refreshToken, profile, done) => {
       User.findOne({ googleId: profile.id })
@@ -84,13 +83,13 @@ passport.use(
 	)
 );
 
-passport.use(
-  new FacebookStrategy({
-    clientID: keys.facebookClientID,
-    clientSecret: keys.facebookClientSecret,
-    profileFields: ['email', 'displayName'],
-    callbackURL: 'http://localhost:5000/auth/facebook/callback'
-  }, (accessToken) => {
-    console.log(accessToken);
-  })
-);
+// passport.use(
+//   new FacebookStrategy({
+//     clientID: keys.facebookClientID,
+//     clientSecret: keys.facebookClientSecret,
+//     profileFields: ['email', 'displayName'],
+//     callbackURL: 'http://localhost:5000/auth/facebook/callback'
+//   }, (accessToken) => {
+//     console.log(accessToken);
+//   })
+// );
