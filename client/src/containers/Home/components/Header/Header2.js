@@ -9,7 +9,12 @@ export default class Header2 extends Component {
   componentDidMount() {
     var isMolbile;
     window.$(document).ready(() => {
-      window.$(".button-collapse").sideNav();
+      window.$(".button-collapse").sideNav({
+        menuWidth: 200,
+        edge: 'left',
+        closeOnClick: true,
+        draggable: true
+      });
       window.$("#search-icon").click(() => {
         if (window.$("#hanburger-icon").is(":visible")) {
           isMolbile = true;
@@ -111,17 +116,15 @@ export default class Header2 extends Component {
                 </div>
               </form>
             </div>
-
-            {/* 漢堡選單OPEN */}
-            <ul className="side-nav" id="side-out">
-              <li><a><i className="material-icons icon-grey-darken-4">search</i></a></li>
-              <li><Link to="Aboutus" className="dropdown-button grey-text text-darken-4">About us</Link></li>
-              <li><a>Log in</a></li>
-              <li><a className="dropdown-button" data-activates="mob-menu" data-beloworigin="true">Sign up<i className="material-icons right">arrow_drop_down</i></a></li>
-
-            </ul>
           </div>
         </nav>
+        {/* 漢堡選單OPEN */}
+        <ul className="side-nav" id="side-out">
+          <li><a><i className="material-icons icon-grey-darken-4">search</i></a></li>
+          <li><Link to="Aboutus" className="dropdown-button grey-text text-darken-4">About us</Link></li>
+          <li><a>Log in</a></li>
+          <li><a className="dropdown-button" data-activates="mob-menu" data-beloworigin="true">Sign up<i className="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
       </div>
     );
   }
