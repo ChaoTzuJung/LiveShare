@@ -32,14 +32,14 @@ module.exports = app => {
     }
   )
   // 登入和登出 & 把 googleId 傳到畫面上
+  app.get('/api/current_user', (req, res)=>{
+    res.send(req.user);
+  });
+
   app.get('/api/logout', (req, res) => {
     // passport內建function 可以砍掉cookie內的user.id
     req.logout();
     res.redirect('/');
-  });
-  
-  app.get('/api/current_user', (req, res)=>{
-    res.send(req.user);
   });
 
 };

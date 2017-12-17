@@ -29,7 +29,7 @@ class Main extends Component {
     return(
       <Router>
         <div>
-          <Header />
+          <Route component={Header} />
           <Route exact path="/" component={Home} />
           <Route path="/auth/signin" component={SignIn} />
           <Route path="/Aboutus" component={Aboutus} />

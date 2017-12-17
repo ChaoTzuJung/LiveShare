@@ -7,6 +7,7 @@ import reduxThunk from 'redux-thunk';
 import promise from 'redux-promise';
 import reducers from './reducers';
 import Main from './containers/';
+import 'materialize-css/dist/css/materialize.min.css';
 
 //const createStoreWithMiddleWare = applyMiddleware(promise)(createStore);
 //createStore(reducer, initial state/Object當空的State, applyMiddleware)
