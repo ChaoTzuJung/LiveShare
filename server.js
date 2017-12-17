@@ -42,5 +42,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 //要放在passport之下
 require('./routes/auth')(app);
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);

@@ -1,11 +1,31 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { findDOMNode } from 'react-dom';
+// import { findDOMNode } from 'react-dom';
+import { connect } from 'react-redux';
 import SideNav from '../Sidenav/Sidenav';
 import Logo from '../../../../static/images/liveshare.png';
 import './Header2.less';
 
-export default class Header2 extends Component {
+class Header2 extends Component {
+  renderContent() {
+    switch (this.props.auth) {
+      case null:
+        return;
+      case false:
+        return(
+          <li>
+            <Link className="dropdown-button grey-text text-darken-4 item" to="/auth/signin">
+              Sign In
+            </Link>
+          </li> 
+        )
+      default:
+        return (
+          <li><a className="dropdown-button grey-text text-darken-4 item" href="/api/logout">Logout</a></li> 
+        )
+    }
+  }
+
   componentDidMount() {
     var isMolbile;
     window.$(document).ready(() => {
@@ -45,7 +65,7 @@ export default class Header2 extends Component {
   }
 
   render() {
-
+    console.log(this.props.auth);
     const headerLogoImg = {
       backgroundImage: `url(${Logo})`
     };
@@ -73,9 +93,7 @@ export default class Header2 extends Component {
             </ul>
             {/* 右邊的按鈕 */}
             <ul className="right hide-on-med-and-down">
-              <li>
-                <a className="dropdown-button grey-text text-darken-4 item" href="/auth/google">Log in</a>
-              </li>
+              {this.renderContent()}
               <li>
                 <a className="dropdown-button grey-text text-darken-4 item" data-activates="comp-menu" data-beloworigin="true" data-constrainwidth="false">Sign up<i className="material-icons right icon-grey-darken-4">arrow_drop_down</i></a>
               </li>
@@ -122,11 +140,17 @@ export default class Header2 extends Component {
         <ul className="side-nav" id="side-out">
           <li><a><i className="material-icons icon-grey-darken-4">search</i></a></li>
           <li><Link to="Aboutus" className="dropdown-button grey-text text-darken-4">About us</Link></li>
-          <li><a href="/auth/google">Log in</a></li>
+          {this.renderContent()}
           <li><a className="dropdown-button" data-activates="mob-menu" data-beloworigin="true">Sign up<i className="material-icons right">arrow_drop_down</i></a></li>
         </ul>
       </div>
     );
   }
 }
+function mapStateToProps(state) {
+  return {
+    auth: state.auth
+  };
+}
 
+export default connect(mapStateToProps)(Header2)

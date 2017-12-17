@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt-nodejs')
+// const bcrypt = require('bcrypt-nodejs')
 const Schema = mongoose.Schema;
-
 
 const UserSchema = new Schema ({
   // fullname: {type: String, required: true},
@@ -15,7 +14,8 @@ const UserSchema = new Schema ({
   // passwordResetExpires: {type: Date, default: Date.now},
   // facebook: {type: String, default: ''},
   // tokens: Array,
-	googleId: String,
+  googleId: String,
+  facebookId: String
 	// credits: { type: Number, default: 0 }
 });
 // UserSchema.methods.encryptPassword = (password) => {

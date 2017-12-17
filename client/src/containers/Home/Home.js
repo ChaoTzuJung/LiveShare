@@ -36,7 +36,6 @@ export default class Home extends Component {
 
     return (
       <div id="pageHome">
-        <Header2 />
         <Slider />
         <ParallaxProvider>
           {

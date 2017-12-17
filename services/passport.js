@@ -4,7 +4,6 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const FacebookStrategy = require('passport-facebook').Strategy;
 
 const keys = require('../config/keys');
-
 const User = require('../models/User')
 //(user model in mongodb, done argument)
 passport.serializeUser((user, done) => {
@@ -57,7 +56,18 @@ passport.use(
     	clientSecret: keys.googleClientSecret,
       callbackURL: '/auth/google/callback',
       proxy: true
-  	}, 
+    }, 
+    async (accessToken, refreshToken, profile, done) => {
+      const existingUser =  await User.findOne({ googleId: profile.id })
+      
+			if(existingUser) {
+				return done(null, existingUser);
+      } 
+      //把Models(schema)內的東西存到database的collection
+      const user = await new User({ googleId: profile.id }).save();
+      (null, user);
+    }
+    /*
 		(accessToken, refreshToken, profile, done) => {
       User.findOne({ googleId: profile.id })
         .then((existingUser) => {
@@ -73,24 +83,38 @@ passport.use(
               .then((user) => done(null, user));
           }
         })
-			// const existingUser =  await User.findOne({ googleId: profile.id })
-			// if(existingUser) {
-			// 	return done(null, existingUser);
-      // }
-      // //把Models(schema)內的東西存到database的collection
-			// const user = await new User({ googleId: profile.id }).save();
-			// 
-		}
+    }
+    */
 	)
 );
 
-// passport.use(
-//   new FacebookStrategy({
-//     clientID: keys.facebookClientID,
-//     clientSecret: keys.facebookClientSecret,
-//     profileFields: ['email', 'displayName'],
-//     callbackURL: 'http://localhost:5000/auth/facebook/callback'
-//   }, (accessToken) => {
-//     console.log(accessToken);
-//   })
-// );
+passport.use(
+  new FacebookStrategy(
+    {
+      clientID: keys.facebookClientID,
+      clientSecret: keys.facebookClientSecret,
+      callbackURL: '/auth/facebook/callback',
+      passReqToCallback: true,
+      profileFields: [
+        'id',
+        'first_name',
+        'middle_name',
+        'last_name',
+        'gender',
+        'emails'
+      ],
+      proxy: true,
+      enableProof: true
+    },
+    async (accessToken, refreshToken, profile, done) => {
+      const existingUser = await User.findOne({ facebookId: profile.id });
+
+      if (existingUser) {
+        return done(null, existingUser);
+      }
+
+      const user = await new User({ facebookId: profile.id }).save();
+      done(null, user);
+    }
+  )
+);

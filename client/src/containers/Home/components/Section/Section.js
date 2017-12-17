@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import Block from '../Card/Block';
 import Wave from '../Wave';
 import './Section.less';
-import VideoPage from '../VideoPage';
 
 
 export default class Section extends Component {

@@ -1,11 +1,12 @@
 import { combineReducers } from 'redux';
-// import { reducer as formReducer } from 'redux-form';
-import PostReducer from './reducer_posts';
+import { reducer as reduxForm } from 'redux-form';
+import AuthReducer from './authReducer';
 
 
 const rootReducer = combineReducers({
-  // state: (state = {}) => state\
-  posts: PostReducer
+  // state: (state = {}) => state
+  auth: AuthReducer,
+  form: reduxForm,
 });
 
 export default rootReducer;

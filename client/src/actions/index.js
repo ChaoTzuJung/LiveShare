@@ -1,13 +1,29 @@
 import axios from 'axios';
+import querystring from 'querystring';
+import { FETCH_USER } from './types';
 
-const WEB_DATA = 'https://raw.githubusercontent.com/ChaoTzuJung/ReactLab/master/src/containers/Home/webData.json';
-// const API_KEY = '?key=ALAN0523';
-export const FETCH_POSTS = 'fetch_posts';
+//action creator
+export const fetchUser = () => async dispatch => {
+  const res = await axios.get('/api/current_user');
+  dispatch({ type: FETCH_USER, payload: res.data });
+};
 
-export function fetchPosts() {
-  const request = axios.get(`${WEB_DATA}`);
-  return {
-    type: FETCH_POSTS,
-    payload: request
-  };
-}
+export const signInUser = params => async dispatch => {
+  const { data } = await axios.post(
+    '/api/signin',
+    querystring.stringify(params)
+  );
+  console.log('signInUser', data);
+};
+
+export const signUpUser = params => async dispatch => {
+  const { data } = await axios.post(
+    '/api/signup',
+    querystring.stringify(params)
+  );
+  console.log('signUpUser', data);
+};
+
+
+
+//當使用reduxthunk，createAtion的return會從一個request變成一個function，function內涵dispatch，他可以送出action

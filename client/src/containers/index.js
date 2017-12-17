@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 // import package
 import { HashRouter as Router, Route, Switch, BrowserRouter } from 'react-router-dom';
-// import { Router, browserHistory } from 'react-router';
-// import 'normalize.css/normalize.css';
+import { connect } from 'react-redux';
+import * as actions from '../actions'
 import 'ress/dist/ress.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'animate.css/animate.min.css';
@@ -15,23 +15,31 @@ import '../../node_modules/materialize-css/dist/js/materialize.min.js';
 
 
 // import relative path
-import VideoPage from './Home/components/VideoPage';
-import Signup from './Home/Signup';
+import Login from './Home/Login';
 import Aboutus from './Home/Aboutus';
 import Home from './Home';
-import NotFound from './NotFound';
+import Header from '../containers/Home/components/Header/Header2';
+import SignIn from '../containers/Home/components/SignIn';
 
-const Main = () => (
-  <Router>
-    <Switch>
-      {/* <Route exact path="/" component={Home} />*/}
-      {/* <Route path="/VideoPage" component={VideoPage} /> */}
-      <Route path="/Aboutus" component={Aboutus} />
-      <Route path="/signup" component={Signup} />
-      <Route path="/" component={Home} />
-      <Route component={NotFound} />
-    </Switch>
-  </Router>
-);
+class Main extends Component {
+  componentDidMount() {
+    this.props.fetchUser();
+  }
+  render() {
+    return(
+      <Router>
+        <div>
+          <Header />
+          <Route exact path="/" component={Home} />
+          <Route path="/auth/signin" component={SignIn} />
+          <Route path="/Aboutus" component={Aboutus} />
+          <Route path="/auth/login" component={Login} />
+        </div>
+      </Router>
+    );
+  }
+}
+//(,mapStateToProp, wire up al diff action creators)
+export default connect(null, actions)(Main);
 
-export default Main;
+//we can call our action creator by referenceing this props
