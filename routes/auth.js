@@ -1,9 +1,5 @@
 const passport = require('passport');
 module.exports = app => {
-  // 起始畫面
-  app.get('/', (req, res) => {
-    res.redirect('/');
-  });
 
   // 登入google
   app.get(
