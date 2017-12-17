@@ -1,8 +1,8 @@
 const passport = require('passport');
 module.exports = app => {
-
-  app.get('/login', (req, res) => {
-    res.render('user/login', {title: 'Login || RateMe'});
+  // 起始畫面
+  app.get('/', (req, res) => {
+    res.redirect('/');
   });
 
   // 登入google
@@ -45,6 +45,7 @@ module.exports = app => {
   app.get('/api/current_user', (req, res)=>{
     res.send(req.user);
   });
+
 };
 
 
