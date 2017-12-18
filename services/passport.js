@@ -1,6 +1,6 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
-const GoogleStrategy = require('passport-google-oauth20').OAuth2Strategy;;
+const GoogleStrategy = require('passport-google-oauth20').Strategy;;
 const FacebookStrategy = require('passport-facebook').Strategy;
 
 const keys = require('../config/keys');
