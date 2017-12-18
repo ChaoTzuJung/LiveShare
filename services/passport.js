@@ -4,7 +4,8 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;;
 const FacebookStrategy = require('passport-facebook').Strategy;
 const mongoose = require('mongoose')
 const keys = require('../config/keys');
-const User = require('../models/User')
+
+const User = mongoose.model('users');
 //(user model in mongodb, done argument)
 passport.serializeUser((user, done) => {
   //(no error, identify users) user.id != profile.id(googleId)

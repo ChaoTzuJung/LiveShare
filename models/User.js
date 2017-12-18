@@ -8,4 +8,4 @@ const UserSchema = new Schema ({
 });
 
 //(name of collection, schema for collection)
-module.exports = mongoose.model('users', UserSchema);
+mongoose.model('users', UserSchema);
