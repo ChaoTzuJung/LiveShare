@@ -14,7 +14,7 @@ require('./services/passport');
 
 const app = express();
 
-mongoose.connect(keys.mongoURI);
+mongoose.connect(keys.mongoURI, { useMongoClient: true });
 app.use(express.static('public'));
 
 app.use(cookieParser());
