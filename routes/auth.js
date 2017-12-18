@@ -12,7 +12,7 @@ module.exports = app => {
   app.get(
     '/auth/facebook',
     passport.authenticate('facebook', {
-      scope: ['public_profile', 'email']
+      // scope: ['public_profile', 'email']
     })
   );
 
@@ -26,7 +26,7 @@ module.exports = app => {
 
   app.get(
     '/auth/facebook/callback',
-    passport.authenticate('facebook',{ failureRedirect: '/', successRedirect : '/', failureFlash : true}),
+    passport.authenticate('facebook',{ failureRedirect: '/'}),
     (req, res) => {
       res.redirect('/');
     }
@@ -41,6 +41,5 @@ module.exports = app => {
     req.logout();
     res.redirect('/');
   });
-
-};
+}
 

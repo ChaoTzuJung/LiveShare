@@ -19,37 +19,6 @@ passport.deserializeUser((id, done) => {
 		});
 });
 
-// passport.use(
-//   'local.signup',
-//   new LocalStrategy(
-//     {
-//     	usernameField: 'email',
-//     	passeordField: 'password',
-//     	passReqToCallback: true,
-// 			proxy: true
-//   	}, 
-// 		async (req, email, password, done) => {
-// 			const existingUser =  await User.findOne({ 'email': email }, (err, user) => {
-//         if(existingUser) {
-//           return done(null, false);
-//         }
-//         if(err) {
-//           return done(err);
-//         }
-
-//         const newUser = new User();
-//         newUser.fullname = req.body.fullname;
-//         newUser.email = req.body.email;
-//         newUser.password = encryptPassword(req.body.password);
-
-//       })
-//       newUser.save((err) => {
-//         return done(null, newUser);
-//       });
-// 		}
-// 	)
-// );
-
 passport.use(
   new GoogleStrategy(
     {
@@ -60,7 +29,6 @@ passport.use(
     }, 
     async (accessToken, refreshToken, profile, done) => {
       const existingUser =  await User.findOne({ googleId: profile.id })
-      
 			if(existingUser) {
 				return done(null, existingUser);
       } 
@@ -68,24 +36,6 @@ passport.use(
       const user = await new User({ googleId: profile.id }).save();
       (null, user);
     }
-    /*
-		(accessToken, refreshToken, profile, done) => {
-      User.findOne({ googleId: profile.id })
-        .then((existingUser) => {
-          //已經有record with profile id
-          if(existingUser) {
-            //done(no error, here is user we find)
-            return done(null, existingUser);
-           } else {
-             //沒有record with profile id，那就創一個吧
-            new User({ googleId: profile.id })
-              .save()
-              //創造傳遞新的user model給mongodb並存
-              .then((user) => done(null, user));
-          }
-        })
-    }
-    */
 	)
 );
 
@@ -95,10 +45,10 @@ passport.use(
       clientID: keys.facebookClientID,
       clientSecret: keys.facebookClientSecret,
       callbackURL: '/auth/facebook/callback',
-      profileFields: ['id', 'name','picture.type(large)', 'emails', 'username', 'displayName', 'about', 'gender'], 
+      profileFields: ['id', 'emails'], 
       proxy: true,
     },
-    async (req, accessToken, refreshToken, profile, done) => {
+    async (req, accessToken, refreshToken, profile, cb) => {
       console.log(req);
       const existingUser = await User.findOne({ facebookId: profile.id });
 
@@ -107,7 +57,7 @@ passport.use(
       }
 
       const user = await new User({ facebookId: profile.id }).save();
-      done(null, user);
+      cb(null, user);
     }
   )
 );
