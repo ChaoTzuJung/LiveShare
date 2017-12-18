@@ -26,10 +26,9 @@ module.exports = app => {
 
   app.get(
     '/auth/facebook/callback',
-    passport.authenticate('facebook',{ failureRedirect: '/failed'}),
+    passport.authenticate('facebook',{ failureRedirect: '/'}),
     (req, res) => {
       res.redirect('/');
-      res.send(req.user);
     }
   )
   // 登入和登出 & 把 googleId 傳到畫面上

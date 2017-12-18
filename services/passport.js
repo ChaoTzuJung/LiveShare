@@ -95,18 +95,10 @@ passport.use(
       clientSecret: keys.facebookClientSecret,
       callbackURL: '/auth/facebook/callback',
       passReqToCallback: true,
-      profileFields: [
-        'id',
-        'first_name',
-        'middle_name',
-        'last_name',
-        'gender',
-        'emails'
-      ],
       proxy: true,
-      enableProof: true
     },
     async (accessToken, refreshToken, profile, done) => {
+      console.log(accessToken);
       const existingUser = await User.findOne({ facebookId: profile.id });
 
       if (existingUser) {
@@ -114,6 +106,7 @@ passport.use(
       }
 
       const user = await new User({ facebookId: profile.id }).save();
+      console.log('facebookUser', user)
       done(null, user);
     }
   )
