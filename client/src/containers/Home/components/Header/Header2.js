@@ -76,7 +76,7 @@ class Header2 extends Component {
         <nav className="header fixed">
           <div className="nav-wrapper white">
             {/* LOGO */}
-            <Link to="" className="brand-logo center">
+            <Link to={this.props.user ? '/' : ''} className="brand-logo center">
               <div className="imgBox">
                 <div className="imgBox-inner">
                   <div className="imgBox-fit">

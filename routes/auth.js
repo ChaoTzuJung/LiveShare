@@ -1,7 +1,7 @@
 const passport = require('passport');
+
 module.exports = app => {
 
-  // 登入google
   app.get(
 		'/auth/google',
 		passport.authenticate('google', {
@@ -9,14 +9,6 @@ module.exports = app => {
     })
   );
 
-	app.get(
-    '/auth/google/callback',
-    passport.authenticate('google'),
-    (req, res) => {
-      res.redirect('/');
-    }
-  )
-  // 登入facebook
   app.get(
     '/auth/facebook',
     passport.authenticate('facebook', {
@@ -24,9 +16,17 @@ module.exports = app => {
     })
   );
 
+	app.get(
+    '/auth/google/callback',
+    passport.authenticate('google',{ failureRedirect: '/'}),
+    (req, res) => {
+      res.redirect('/');
+    }
+  )
+
   app.get(
     '/auth/facebook/callback',
-    passport.authenticate('facebook',{ failureRedirect: '/'}),
+    passport.authenticate('facebook',{ failureRedirect: '/', successRedirect : '/', failureFlash : true}),
     (req, res) => {
       res.redirect('/');
     }
@@ -44,18 +44,3 @@ module.exports = app => {
 
 };
 
-
-
-// app.get('/', (req, res, next) => {
-//   res.render('index', {title: 'Index || RateMe'});
-// });
-
-// app.get('/signup', (req, res) => {
-//   res.render('user/signup', {title: 'Sign Up || RateMe'});
-// });
-
-// app.post('/signup', passport.authenticate('local.signup',{
-//   successRedirect: '/home',
-//   failureRedirect: '/signup',
-//   failureFlash : true
-// }));

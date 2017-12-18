@@ -21,7 +21,7 @@ app.use(express.static('public'));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-
+//use cookie-session as we don't need to save a ton of cookie data, use express session of cookie needs to hold a lot of data (more than 14kb)
 app.use(
   cookieSession({
     //30 days millisecond will expire
@@ -30,13 +30,6 @@ app.use(
     keys: [keys.cookieKey]
   })
 );
-
-// app.use(session({
-//   secret: 'Thisismytestkey',
-//   resave: false,
-//   saveUninitialized: false,
-//   store: new MongoStore({mongooseConnection: mongoose.connection})
-// }));
 
 //tell cookie to manage our authenticated
 app.use(passport.initialize());
@@ -49,7 +42,7 @@ if(process.env.NODE_ENV === 'production' ) {
 
 	const path = require('path');
 	app.get('*',(req, res) => {
-		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+		res.sendFile(path.resolve(__dirname, '..', 'client', 'build', 'index.html'))
 	});
 }
 
