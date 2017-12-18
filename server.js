@@ -14,6 +14,7 @@ require('./services/passport');
 
 const app = express();
 
+mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI, { useMongoClient: true });
 app.use(express.static('public'));
 
