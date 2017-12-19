@@ -13,9 +13,9 @@ export default class Media extends Component {
       youtubeUrl
     } = this.props;
     return (
-      <div className="video-container">
-        <iframe width="853" height="480" src={`${youtubeUrl}`}/>
-      </div>
+      <video id="videoPlayer" controls>
+        <source src="/video" type="video/mp4" />
+      </video>
     );
   }
 }

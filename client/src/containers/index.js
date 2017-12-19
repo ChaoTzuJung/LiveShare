@@ -17,8 +17,8 @@ import '../../node_modules/materialize-css/dist/js/materialize.min.js';
 // import relative path
 import Login from './Home/Login';
 import Aboutus from './Home/Aboutus';
+import NotFound from './NotFound'
 import Home from './Home';
-import Header from '../containers/Home/components/Header/Header2';
 import SignIn from '../containers/Home/components/SignIn';
 
 class Main extends Component {
@@ -29,11 +29,11 @@ class Main extends Component {
     return(
       <Router>
         <div>
-          <Route component={Header} />
-          <Route exact path="/" component={Home} />
           <Route path="/auth/signin" component={SignIn} />
           <Route path="/Aboutus" component={Aboutus} />
           <Route path="/auth/login" component={Login} />
+          <Route exact path="/" component={Home} />
+          <Route component={NotFound} />
         </div>
       </Router>
     );

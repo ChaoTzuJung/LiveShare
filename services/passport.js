@@ -48,9 +48,9 @@ passport.use(
       profileFields: ['id', 'emails'], 
       proxy: true,
     },
-    async (req, accessToken, refreshToken, profile, cb) => {
+    async (accessToken, refreshToken, profile, cb) => {
       console.log(req);
-      const existingUser = await User.findOne({ facebookId: profile.id });
+      const existingUser = await User.findOrCreate({ facebookId: profile.id });
 
       if (existingUser) {
         return done(null, existingUser);

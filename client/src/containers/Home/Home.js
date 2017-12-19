@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { AnimatedRoute } from 'react-router-transition';
-import { Link } from 'react-router-dom';
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { Link, withRouter } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
-import Header from './components/Header/Header';
-import Header2 from './components/Header/Header2';
+
+import Header from './components/Header/Header2';
 import Slider from './components/Slider';
 import Section from './components/Section';
 import DetailPage from './components/DetailPage';
 import FlipCard from './components/FlipCard';
 import Footer from './components/Footer';
+
 import webJson from './webData.json';
 import member from './member.json';
 import './Home.less';
 
-export default class Home extends Component {
+class Home extends Component {
   static propTypes = {
     history: PropTypes.object,
     match: PropTypes.object,
@@ -36,8 +36,9 @@ export default class Home extends Component {
 
     return (
       <div id="pageHome">
+        <Header />
         <Slider />
-        <ParallaxProvider>
+        <div>
           {
             webJson.map((sectionData, index) =>
               <Section
@@ -51,7 +52,7 @@ export default class Home extends Component {
               />
             )
           }
-        </ParallaxProvider>
+        </div>
         <div className={`menu ${!isExact && 'slideIn'}`}>
           {
             webJson.map(sectionData => (
@@ -80,3 +81,4 @@ export default class Home extends Component {
     );
   }
 }
+export default withRouter(Home);
