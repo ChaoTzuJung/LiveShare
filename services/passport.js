@@ -39,25 +39,21 @@ passport.use(
 	)
 );
 
-passport.use(
-  new FacebookStrategy(
-    {
-      clientID: keys.facebookClientID,
-      clientSecret: keys.facebookClientSecret,
-      callbackURL: '/auth/facebook/callback',
-      profileFields: ['id', 'emails'], 
-      proxy: true,
-    },
-    async (accessToken, refreshToken, profile, cb) => {
-      console.log(req);
-      const existingUser = await User.findOrCreate({ facebookId: profile.id });
-
-      if (existingUser) {
-        return done(null, existingUser);
-      }
-
-      const user = await new User({ facebookId: profile.id }).save();
-      cb(null, user);
-    }
-  )
-);
+passport.use(new FacebookStrategy({
+  clientID: keys.facebookClientID,
+  clientSecret: keys.facebookClientSecret,
+  callbackURL: "/auth/facebook/callback",
+  profileFields: ['id', 'email'],
+  profileURL: "https://graph.facebook.com/v2.2/me",
+  proxy: true
+},
+async (accessToken, refreshToken, profile, cb) => {
+  const existingUser = await User.findOne({ facebookId: profile.id })
+  if (existingUser) {
+    return cb(null, existingUser);
+  }
+  const user =  await new User({ facebookId: profile.id }).save();
+  console.log('facebook_user', user)
+  cb(null, user);
+}
+));
