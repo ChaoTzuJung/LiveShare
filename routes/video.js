@@ -1,7 +1,12 @@
+const express = require('express');
+const path = require('path')
+const fs = require('fs');
+// const Unravel = require('../client/assets/Unravel.mp4');
+
 module.exports = app => {
   
-  app.get('/video', function(req, res) {
-    const path = 'assets/Unravel.mp4'
+  app.get('/auth/signin', function(req, res) {
+    const path = '../client/assets/Unravel.mp4'
     const stat = fs.statSync(path)
     const fileSize = stat.size
     const range = req.headers.range

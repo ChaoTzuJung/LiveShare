@@ -39,8 +39,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 //要放在passport之下
 require('./routes/auth')(app);
-require('./routes/video')(app);
 //影音串流
+require('./routes/video')(app);
 
 
 if(process.env.NODE_ENV === 'production' ) {
