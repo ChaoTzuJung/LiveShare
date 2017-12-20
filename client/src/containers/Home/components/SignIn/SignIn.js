@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../../../actions';
-import Media from '../Media'
 
 class SignIn extends Component {
   state = {
@@ -31,7 +30,6 @@ class SignIn extends Component {
     };
     return (
       <div className="row" style={styles}>
-      <Media />
         <form className="col s12" onSubmit={this.handleOnSubmit}>
           <div className="row">
             <div className="input-field col s12">

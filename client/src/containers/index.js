@@ -19,6 +19,7 @@ import Login from './Home/Login';
 import Aboutus from './Home/Aboutus';
 import NotFound from './NotFound'
 import Home from './Home';
+import Video from '../containers/Home/components/Media'
 import SignIn from '../containers/Home/components/SignIn';
 
 class Main extends Component {
@@ -32,6 +33,7 @@ class Main extends Component {
           <Route path="/auth/signin" component={SignIn} />
           <Route path="/Aboutus" component={Aboutus} />
           <Route path="/auth/login" component={Login} />
+          <Route path="/video" component={Video} />
           <Route exact path="/" component={Home} />
           <Route component={NotFound} />
         </div>
