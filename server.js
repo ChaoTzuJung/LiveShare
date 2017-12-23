@@ -10,6 +10,7 @@ var session = require('express-session');
 const path = require('path');
 const passport = require('passport');
 const keys = require('./config/keys')
+
 //下面兩個引入順序下重要，要先定義模型passport才能使用模型
 require('./models/User');
 require('./services/passport');
@@ -19,10 +20,6 @@ const app = express();
 mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI, { useMongoClient: true });
 app.use(express.static(path.join(__dirname, 'public')))
-
-// routes
-var contact = require('./routes/contact');
-app.use('/contact', contact);
 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -40,6 +37,9 @@ app.use(
 //tell cookie to manage our authenticated
 app.use(passport.initialize());
 app.use(passport.session());
+
+//表單回饋
+require('./routes/contact')(app);
 //要放在passport之下
 require('./routes/auth')(app);
 //影音串流
