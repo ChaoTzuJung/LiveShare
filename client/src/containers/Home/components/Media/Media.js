@@ -13,7 +13,7 @@ export default class Media extends Component {
     return (
       <div>
         <Player playsInline poster="/assets/poster.png">
-          <source src="http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4" />
+          <source src="http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4" />
           <ControlBar>
             <ReplayControl seconds={10} order={1.1} />
             <ForwardControl seconds={30} order={1.2} />

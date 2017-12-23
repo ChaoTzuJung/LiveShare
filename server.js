@@ -5,7 +5,7 @@ var fs = require('fs')
 var cookieSession = require('cookie-session');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-// var session = require('express-session');
+var session = require('express-session');
 //var MongoStore = require('connect-mongo')(session);
 const path = require('path');
 const passport = require('passport');
@@ -19,7 +19,10 @@ const app = express();
 mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI, { useMongoClient: true });
 app.use(express.static(path.join(__dirname, 'public')))
-//app.use(express.static('public'));
+
+// routes
+var contact = require('./routes/contact');
+app.use('/contact', contact);
 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -42,6 +45,23 @@ require('./routes/auth')(app);
 //影音串流
 require('./routes/video')(app);
 
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
+});
+
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
+});
 
 if(process.env.NODE_ENV === 'production' ) {
 	app.use(express.static('client/build'));

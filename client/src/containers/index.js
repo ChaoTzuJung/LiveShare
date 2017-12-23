@@ -21,6 +21,7 @@ import NotFound from './NotFound'
 import Home from './Home';
 import Video from '../containers/Home/components/Media'
 import SignIn from '../containers/Home/components/SignIn';
+import Contactus from '../containers/Home/Contactus';
 
 class Main extends Component {
   componentDidMount() {
@@ -31,6 +32,7 @@ class Main extends Component {
       <Router>
         <div>
           <Route path="/auth/signin" component={SignIn} />
+          <Route path="/contact" component={Contactus} />
           <Route path="/Aboutus" component={Aboutus} />
           <Route path="/auth/login" component={Login} />
           <Route path="/video" component={Video} />
