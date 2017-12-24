@@ -10,19 +10,19 @@ import './Section.less';
 
 export default class Section extends Component {
   static propTypes = {
-    title: PropTypes.string,
-    id: PropTypes.string,
-    dataList: PropTypes.array,
-    goDetail: PropTypes.func,
-    desc: PropTypes.string,
     reverse: PropTypes.bool,
+    title: PropTypes.string,
+    dataList: PropTypes.array,
+    id: PropTypes.string,
+    desc: PropTypes.string,
+    goDetail: PropTypes.func,
   }
 
 
+
+
   render() {
-    const {
-      title, id, VideoId, dataList, goDetail, desc, reverse, goVideo
-    } = this.props;
+    const { reverse, title, dataList, id, desc, goDetail } = this.props;
     return (
       <div className="section" id={id}>
         <div className="section_title">

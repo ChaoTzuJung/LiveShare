@@ -32,10 +32,9 @@ class Main extends Component {
       <Router>
         <div>
           <Route path="/auth/signin" component={SignIn} />
-          <Route path="/contact" component={Contactus} />
           <Route path="/Aboutus" component={Aboutus} />
           <Route path="/auth/login" component={Login} />
-          <Route path="/video" component={Video} />
+          <Route path="/course/:name" component={Video} />
           <Route exact path="/" component={Home} />
           <Route component={NotFound} />
         </div>

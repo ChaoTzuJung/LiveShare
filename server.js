@@ -1,24 +1,29 @@
 const express = require('express');
-var mongoose = require('mongoose');
-var fs = require('fs')
+const expressGraphQL = require('express-graphql');
+const mongoose = require('mongoose');
+const models =require('./models/User');
 //passport，透過cookie-session可以使用cookie，透過cookie追溯 user session 或登入裝態 
 var cookieSession = require('cookie-session');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
-//var MongoStore = require('connect-mongo')(session);
+const MongoStore = require('connect-mongo')(session);
 const path = require('path');
 const passport = require('passport');
 const keys = require('./config/keys')
-
+const schema = require('./schema/schema');
 //下面兩個引入順序下重要，要先定義模型passport才能使用模型
-require('./models/User');
+
 require('./services/passport');
+// const passportConfig = require('./services/auth');
+
 
 const app = express();
 
 mongoose.Promise = global.Promise;
+
 mongoose.connect(keys.mongoURI, { useMongoClient: true });
+
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.use(cookieParser());
@@ -38,12 +43,13 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-//表單回饋
-require('./routes/contact')(app);
+app.use('/graphql', expressGraphQL({
+  schema,
+  graphiql: true
+}));
+
 //要放在passport之下
 require('./routes/auth')(app);
-//影音串流
-require('./routes/video')(app);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

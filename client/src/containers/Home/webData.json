@@ -10,7 +10,7 @@
         "description": "如果你對 CSS 有興趣，並且希望能夠看到不同樣貌的 CSS，或者厭倦了普通的切版，希望了解更多 CSS 的特殊變化，那麼這堂課可以讓你看到 CSS 有趣的另一面。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510073026/coding1_kq2ydy.jpg",
         "demoUrl": "https://reactmaker.github.io/react_generator/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=Jr7lwHnTK68",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_thumbnail"
       },{
         "key": "Python 入門到製作遊戲演算法",
@@ -18,15 +18,15 @@
         "description": "這堂課程總共有 400 分鐘，聽起來很多，但是我把它分成六大關卡，每次只要看一點點就可以休息了，不用擔心。在這六大關卡內，有兩種單元，第一種是「由我講解」；第二種是「練習題」。因基礎內容太無聊了，所以我會用邊教邊練習的方式來讓你聽懂。練習題只要有確實的上完課程，都可以輕鬆完成，而且每題都會有講解，可以先自己試試看，真的想不出來再看我提供的解答。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510073027/coding2_pryx1k.jpg",
         "demoUrl": "https://reactmaker.github.io/react_thumbnail/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=de5z-p4yvN0",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_generator"
       },{
         "key": "JavaScript 程式設計新手村",
-        "name": "JavaScript 程式設計新手村7",
+        "name": "JavaScript 程式設計新手村",
         "description": "若說程式語言中最勵志的故事， JavaScript 絕對可以排到前幾名，從過去的跑龍套到現在獨挑大樑。現在的 JavaScript 不僅是網頁開發中最重要的明星，更可以開發手機 App、物聯網（IoT）、VR/AR 應用程式。本課程將會帶領大家從零開始打好 JavaScript 基礎，由淺入深介紹 JavaScript 重要特性，實作有趣的應用程式，最後帶領大家實作課後專題，做出一個屬於自己的 Chrome 瀏覽器外掛程式，並上架到 Google Chrome 市集。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510073025/coding3_neqfrr.jpg",
         "demoUrl": "",
-        "youtubeUrl": "https://www.youtube.com/watch?v=evIGdOzKCYk&list=PLTb8yNz82VDW-Ka3DMZUvhf16zZCPFiGe",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/simple_react_start_kit_2017"
       },{
         "key": "動畫互動網頁程式入門 (HTML/CSS/JS)",
@@ -34,7 +34,7 @@
         "description": "你曾經想學過網頁設計嗎?經看過線上課程，大部分的程式設計教學往往只講解功能沒教你如何讓網頁好看，好用學完做出來之後，總離真正上線的網頁有段距離而覺得沮",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510073027/coding4_x3mmby.jpg",
         "demoUrl": "",
-        "youtubeUrl": "https://www.youtube.com/watch?v=sHn97xSjB5Q",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/simple_react_start_kit_2017"
       },{
         "key": "Python Web 程式設計入門實戰",
@@ -43,7 +43,7 @@
         "Python": "網路程式設計與網路爬蟲入門實戰課程預購最後倒數！。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510591564/python_inrz0w.jpg",
         "demoUrl": "",
-        "youtubeUrl": "https://www.youtube.com/watch?v=GytTEu9lpmc",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/simple_react_start_kit_2017"
       },{
         "key": "App Inventor 2 入門特訓",
@@ -51,7 +51,7 @@
         "description": "本課程基於Android平台，將介紹Android APP程式設計所需的軟、硬體和 App Inventor 2 編程方法。從認識基本的變數和運算符號開始，詳細講解如何使用拼圖構建程式，如何編寫函式和運行函式，如何在程序中加入邏輯判斷和迴圈，最後視募資結果還會加碼如何處理APP上架，就是要讓學員能親手做出屬於自己的APP。本課程適合對Android手機APP程式設計感興趣的人，對於剛入門新手或有經驗的熟手都有幫助。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510073025/coding6_ec81ig.jpg",
         "demoUrl": "",
-        "youtubeUrl": "https://www.youtube.com/watch?v=Dd7rbkk_HcI&list=PLU-8o76TOvQVbpfKDVWoy3y7sAwHCm3HT",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/simple_react_start_kit_2017"
       },{
         "key": "後端全攻略，用 Rails 讓你的網頁活起來！",
@@ -59,7 +59,7 @@
         "description": "這門課不會只教你如何用 Rails 快速開發後端，更會帶你走過一個個指令與操作，了解每步驟背後的原理。除了程式語言的教學之外，我們也用圖像化的方式，為你介紹後端那堆複雜抽象的概念，打下扎實的後端開發基礎。一旦掌握了這些概念，未來不管用任何語言、框架都能更容易上手！",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510073025/coding7_x6yz2v.jpg",
         "demoUrl": "",
-        "youtubeUrl": "https://www.youtube.com/watch?v=GY7Ps8fqGdc",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/simple_react_start_kit_2017"
       },{
         "key": "Python 網頁爬蟲入門實戰",
@@ -67,7 +67,7 @@
         "description": "網路上有許多網頁爬蟲的教學文章與影片，它們都是很好的自學素材，但是這些素材多為片段，常常直接切入主題，沒有循序漸進的概念建構，本課程是針對網路爬蟲的完整教學，由淺入深，搭配實戰範例與專題練習，力求符合學生的需要。講者有各種網頁及手機 App 的爬蟲撰寫經驗，也會在課程中分享個人遇過的困難及處理經驗，解答學生的問題。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510073026/coding8_sglyli.jpg",
         "demoUrl": "",
-        "youtubeUrl": "https://www.youtube.com/watch?v=pAY3q4KZ-z4",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/simple_react_start_kit_2017"
       },{
         "key": "C 語言入門特訓",
@@ -75,7 +75,7 @@
         "description": "培養邏輯思辯：分級且循序漸進的課程設計，強調邏輯思辯過程，幫助學員系統性學習。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510073025/coding9_tkjw3i.jpg",
         "demoUrl": "",
-        "youtubeUrl": "https://www.youtube.com/watch?v=of7j8vrFBwU&list=PLY_qIufNHc293YnIjVeEwNDuqGo8y2Emx",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/simple_react_start_kit_2017"
       }
     ]
@@ -91,7 +91,7 @@
         "description": "「書籍封面設計的本身就是要引起探索、互動、關心與觸碰。」美國設計師 Chip Kidd 為這份獨特角色做下了詮釋，這是讀者與作者進一步接觸的橋樑，也是這一堂課的核心。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111590/design1_mah8tz.jpg",
         "demoUrl": "http://reactmaker.github.io/react_challenge_1to50",
-        "youtubeUrl": "https://www.youtube.com/watch?v=l_1QgT0pELE",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_1to50/"
       },{
         "key": "設計思考，頂尖企業都在學的創新流程！",
@@ -99,7 +99,7 @@
         "description": "►設計思考不再是空泛的口號，你可以學會如何將設計思考的實際操作應用在真實問題之上！►能夠在標準案例（題目）之下，做出一個自己發想出來的、經過測試的創意解決方案原型►在學習完一次標準案例之後，學生可以不斷重複影片中老師的步驟引導與教學，套入自己想要解決的問題，經過幾次的演練，你不需要影片也能熟悉整套流程的心態與工具，拿來面對大大小小的問題。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111591/design2_zez2oc.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_davinci_code/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=Ap3qEVzYElk",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_davinci_code"
       },{
         "key": "不懂設計，也能學會的資訊圖像化密技！",
@@ -107,7 +107,7 @@
         "description": "將從資訊設計的歷史及概念出發，依照資訊設計的執行步驟，講解各環節的要點，並教你檢視資訊設計作品的標準；最後，透過各種形式的應用、範例、學習資源…等等，讓你更瞭解資訊設計。簡單來說，你會學到：1. 資訊設計的思考脈絡、角色劃分2. 資訊視覺化的眉角3. 單張資訊圖表的應用4. 簡報設計的應用. 動態圖像設計的應用",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111589/design3_ycokbi.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_train99/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=hIWJa9P24U0",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_train99"
       },{
         "key": "旅行插畫，培養不可或缺的創造力",
@@ -115,7 +115,7 @@
         "description": "插畫不僅止於開心地畫圖，它有各種挑戰性和讓人成長的一面，包含認真的研究以及創作背後的思考脈絡。這堂課是「進階」的旅行插畫，從一趟旅行、寫實、創造、色彩到一張張的記憶。學會觀察，是畫圖最自然的起步，但用心了解你畫的事物，是創作的不同力量。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111590/design4_zfvnvv.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_snake_game/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=n6qCI3B6aOM",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_snake_game"
       },{
         "key": "Illustrator 平面圖像設計",
@@ -123,7 +123,7 @@
         "description": "設計並非立刻學會的事情，凡事要一步一步來，學得輕鬆也要學得有技巧。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111589/design5_nxuupq.jpg",
         "demoUrl": "https://reactmaker.github.io/tic_tac_toe/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=YwMEkV9PY_w",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/tic_tac_toe"
       },{
         "key": "幾何圖形分割 X 色塊組合",
@@ -131,7 +131,7 @@
         "description": "這是一個有趣的小技巧，主要利用illustrator裡面的分割這個功能，我已經想不起來是在什麼樣的原因下完成這樣的作品，但總之我覺得它很有趣，可以跟大家分享。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111590/design6_sb4ick.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_whack_a_mole_game/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=6i_5UFTOVbs",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_whack_a_mole_game"
       },{
         "key": "從入門到業界實戰UI/UX/網頁前端設計",
@@ -139,7 +139,7 @@
         "description": "此課程將會從入門到熟練軟體技巧，包括Adobe Illustrator、Adobe Photoshop出圖、Zeplin、Sketch、Html、Css動畫、jQuery、SVG、RWD響應式設計、業界常用前端設計框架、程式碼管理、設計切版、開發流程等應用。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111589/design7_i6xdbz.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_whack_a_mole_game/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=2j5DqtmSa0E",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_whack_a_mole_game"
       },{
         "key": "設計 DIY - 網拍家的 PS 設計實戰",
@@ -147,7 +147,7 @@
         "description": "在這四年中，學習從商品的拍攝與修圖，到該如何和行銷端合作、賦予設計的 Banner 發揮最大的效益、得到最大點擊率？這些從前輩身上學到許多商用觀念與設計想法，以及如何與時間賽跑，也能做出好 Banner，都是我在網路行銷行業中特有的 Know-How，而我將在這堂 PS 課程中也一併分享。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111590/design8_kgkm7m.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_whack_a_mole_game/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=RrJ0qepN02g",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_whack_a_mole_game"
       },{
         "key": "日本 ACG 繪師教你用 PS 畫出宇宙少女",
@@ -155,7 +155,7 @@
         "description": "課堂中記錄了我在構思草稿、描線到上色、潤色，直至完成的全部過程，並會同時帶入這堂課的五大重點",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111591/design9_m6q3qo.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_whack_a_mole_game/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=uH6Bdw8OQGc",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_whack_a_mole_game"
       }
     ]
@@ -171,63 +171,63 @@
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111273/animation1_smaqxg.jpg",
         "demoUrl": "https://youtu.be/UnJx8shu4Zk",
 
-        "youtubeUrl": "https://www.youtube.com/watch?v=HD4dS-HizTo"
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4"
       },{
         "key": "Spine 新手快速做動畫超簡單！",
         "name": "Spine 新手快速做動畫超簡單！",
         "description": "Spine 是一款針對遊戲開發的2D 骨骼動畫編輯工具，讓一般人也可以用最簡潔的工作流程，創建任何動畫。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111272/animation2_otw0f9.jpg",
         "demoUrl": "https://youtu.be/qXczgeD8YFc",
-        "youtubeUrl": "https://www.youtube.com/watch?v=dfUJymBUljo"
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4"
       },{
         "key": "怪獸工場-基礎角色造型篇",
         "name": "怪獸工場-基礎角色造型篇",
         "description": "在這堂課中，我們會透過多年在業界的創作經驗，把外面所學不到的繪圖訣竅分享給熱愛畫圖的你！讓你可以在這堂課中，快速地了解創作中最重要的觀念及實戰技巧。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111274/animation3_h31gql.jpg",
         "demoUrl": "https://youtu.be/2at9LfkBUqk",
-        "youtubeUrl": "https://www.youtube.com/watch?v=Dg3AFsLsQfI"
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4"
       },{
         "key": "AutoCAD 電腦繪圖2D基礎篇－紮實入門",
         "name": "AutoCAD 電腦繪圖2D基礎篇－紮實入門",
         "description": "「AutoCAD 8400多個職缺，遍佈各行各業，求才若渴？」",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111274/animation4_gcstu1.jpg",
         "demoUrl": "https://youtu.be/T0Em0AUns9w",
-        "youtubeUrl": "https://www.youtube.com/watch?v=BSx05NjcMgk"
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4"
       },{
         "key": "MG 特效 - 3D 陣列圖形與分子運用 C4D+AE",
         "name": "MG 特效 - 3D 陣列圖形與分子運用 C4D+AE",
         "description": "學After Effects您不能不認識的超強補助工具C4D，國外知名Motion Graphic大師指定使用的設計軟體，靈活，易用，發揮創造力，電視台人才的需求，已經指定需要這套軟體。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111274/animation5_hicfrq.jpg",
         "demoUrl": "https://youtu.be/kS9PjfnC-5g",
-        "youtubeUrl": "https://www.youtube.com/watch?v=hr_-Zjtdtyw"
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4"
       },{
         "key": "能輕鬆製作的定格動畫/合成特效 Vol.1",
         "name": "能輕鬆製作的定格動畫/合成特效 Vol.1",
         "description": "在這個手機、相機、電腦非常普及的時代，STOP MOTION的入門門檻已經變得非常低，但是台灣並沒有針對STOP MOTION的教育機構和學習資源，所以有興趣的人只能自己閉門造車，沒有同伴的自學也是舉步維艱，因此這次與Hahow好學校合作這門課程便不僅是為了幫助眾多不得其門而入的朋友，也希望藉由共同學習來向更多人推廣這項有趣的技術。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111272/animation6_rfxopm.jpg",
         "demoUrl": "https://youtu.be/e-FH8L1e67M",
-        "youtubeUrl": "https://www.youtube.com/watch?v=tqi80l2mNn8"
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4"
       },{
         "key": "Cartoon 插畫 - 人物篇",
         "name": "Cartoon 插畫 - 人物篇",
         "description": "這堂課我主要會示範【人物】在這種風格的插畫表現方式，以及運用【場景】跟其他元素，去把一個角色襯托得更為生動、立體。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111272/animation7_cfa05d.jpg",
         "demoUrl": "https://youtu.be/fEiidoMLArs",
-        "youtubeUrl": "https://www.youtube.com/watch?v=3T0AmNaVy0Y"
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4"
       },{
         "key": "怪獸工場 - 人體結構篇",
         "name": "怪獸工場 - 人體結構篇",
         "description": "這堂結構課程，若以技術層面來講，我覺得是繪畫中最為重要，繪畫者都應該要了解的基礎概念！",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111272/animation8_ejkgga.jpg",
         "demoUrl": "https://youtu.be/mRHmUciDk_4",
-        "youtubeUrl": "https://www.youtube.com/watch?v=iFO84oqTx8o"
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4"
       },{
         "key": "給對 Premiere 毫無頭緒的你：最完整的 8 堂課",
         "name": "給對 Premiere 毫無頭緒的你：最完整的 8 堂課",
         "description": "我從小就自學拍攝剪輯影片，直到以下這支影片被 GoPro 看到，並請我上傳給他們分享，後來我收到許多的人開始私訊及留言給我說想學剪輯影片，可是在網路上並沒有一套很完整的 Premiere 教學，可以讓完全沒有概念的學生從 0 到獨立產出一支影片，教學許多也都是英文，而且也都是比較片段式的，然而對於有些從未接觸過的朋友，可能會覺得非常陌生可怕，因此我整理了我自己的自學經驗，把重點跟如何開始實戰的技巧教給大家。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510111272/animation9_d1yg6e.jpg",
         "demoUrl": "https://youtu.be/y5j0rDPlKS0",
-        "youtubeUrl": "https://www.youtube.com/watch?v=AM2koZuXrhc"
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4"
       }
     ]
   },{
@@ -241,7 +241,7 @@
         "description": "很多同學可能會覺得，「略讀」只是一種受時間限制時的一種閱讀技巧：只要掃過文章的標題跟每一個段落的第一句，大致上就了解文章的主旨與大意。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510112165/language1_s0is2t.jpg",
         "demoUrl": "https://reactmaker.github.io/tutorial_props/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=gUSWFT-zHzg",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/tutorial_props"
       },{
         "key": "比ㄅㄆㄇ簡單的韓語發音",
@@ -249,7 +249,7 @@
         "description": "我們是致力於製作有趣、有效、價格友善的網路語言學習內容的團隊。由多位資深的韓語及英語教師共同企劃課程內容。未來不只提供線上課程，還會製作多樣的動態及靜態的語言學習素材，讓大家可以從生活中輕鬆學習外語。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510112167/language2_zojsrb.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_mouse_move_shadow/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=8pD4TnaCLZE",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_mouse_move_shadow"
       },{
         "key": "追劇學韓文—韓語初級會話課程",
@@ -257,7 +257,7 @@
         "description": "各位同學們大家好！首先要歡迎加入 SHOUHAN 手韓，一起學習韓語啦！這期課程內，涵蓋了三個系列課程一、韓語基礎入門發音二、初級會話三、中級會話s在這裡，可以用最不一樣的方式，學到最輕鬆，最地道的韓語。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510112163/language3_be7ksl.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_flex_panel_gallery/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=2ttgxdwIfow",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_flex_panel_gallery"
       },{
         "key": "前進夢想工作：寫出必勝履歷！",
@@ -265,7 +265,7 @@
         "description": "你擔心自己的履歷無法爭取到讓你面試的機會嗎？你覺得目前的工作阻礙你發揮潛力嗎？你受夠目前的工作想要換一份夢想已久的工作嗎？",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510112167/language4_jckapu.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_clock/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=PHS0dLLXeGc",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_clock"
       },{
         "key": "克服阻礙，快速說出流暢英文",
@@ -273,7 +273,7 @@
         "description": "為了慶祝大家踴躍回覆，評價數達40則，老師將會製作【新的五個單元】內容是針對：1、英文長句如何斷句斷的自然2、功能字與內容字如何運用於句型3、圖片描述練習14、圖片描述練習25、應答問題練習更新完成之後，會再告訴大家，我們課堂上見喔XDDDD",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510112165/language5_rnj22h.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_hold_shift_to_check_multiple_checkboxes/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=uIu9FVVUqrs",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_hold_shift_to_check_multiple_checkboxes"
       },{
         "key": "在台灣也能學一口漂亮英文！Phonics 自然發音&正音教學",
@@ -281,15 +281,14 @@
         "description": "『自然發音法—PHONICS』是一套用自然記憶的方式（不用任何符號），再根據『字母』與『字母』間的組合所應該發出的音，由淺入深、勤於反覆練習，建立字母與發音的直覺音感。此發音方式對記憶單字頗有助益，將使孩子往後看到什麼樣的單字組合，就能自然反應該如何發音，聽到一種音，即能直覺反應該如何拼出單字。這也就是英語系國家的人（如：英國、美國、加拿大…）少有發音與拼音困擾之秘訣。。",
           "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510112164/language6_v3jvrz.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_ajax_type_ahead/#/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=RJ5sOUSuTco",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_ajax_type_ahead"
       },{
         "key": "react_challenge_Key_Sequence_Detection",
         "name": "Key_Sequence_Detection",
         "description": "可以讓網頁偵測使用者輸入的字，當字串符合密碼以後解鎖按鈕。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510112164/language7_obr3ht.jpg",
-        "demoUrl": "https://reactmaker.github.io/react_challenge_Key_Sequence_Detection/",
-        "youtubeUrl": "https://youtube",
+        "demoUrl": "https://reactmaker.github.io/react_challenge_Key_Sequence_Dehttp://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_Key_Sequence_Detection"
       },{
         "key": "從 0 到 1 - 為初學者而設計的日文課",
@@ -297,7 +296,7 @@
         "description": "比起一般補習班跟其他課程，有更多的人都是從自學（完全不懂）的情況下踏入日語學習之路。坊間有許多日文補習班，但品質參差不一，常常需要花時間在網路上尋找適合的對象。而補習班也會因每個人的程度不同，上課進度有落差。",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510112166/language8_mmqojs.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_countdown_timer/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=bFjP648kYGE",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_countdown_timer"
       },{
         "key": "迎向南美－從零開始學西班牙文",
@@ -305,7 +304,7 @@
         "description": "因為這些非凡的經歷，所以我累積了許多會話的技巧。都會在這堂課教給大家喔！",
         "img": "http://res.cloudinary.com/de8zvhth3/image/upload/v1510112163/language9_jbepht.jpg",
         "demoUrl": "https://reactmaker.github.io/react_challenge_css_variables/",
-        "youtubeUrl": "https://www.youtube.com/watch?v=PiXLnb7PMRs",
+        "videoUrl": "http://127.0.0.1/123/Liveshare/Animation/%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp4",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_css_variables"
       }
     ]
