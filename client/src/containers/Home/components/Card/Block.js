@@ -34,7 +34,7 @@ export default class Block extends Component {
       <div className="col s12 m6 l3">
         <div className="card">
           <div className="card-image waves-effect waves-block waves-light">
-            <Link to={`/course/${videoUrl}`}>
+            <Link to={`/course/${name}`}>
               <img src={img} alt="#" />
             </Link>
           </div>
