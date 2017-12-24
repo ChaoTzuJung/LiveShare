@@ -5,16 +5,11 @@ import './Block.less';
 
 export default class Block extends Component {
   static propTypes = {
-    history: PropTypes.object,
     name: PropTypes.string,
     description: PropTypes.string,
     img: PropTypes.string,
     demoUrl: PropTypes.string,
     repoUrl: PropTypes.string,
-  }
-
-  goVideo = (name) => {
-    this.props.history.push(`/course/${name}`);
   }
 
   render() {

@@ -34,7 +34,7 @@ class Main extends Component {
           <Route path="/auth/signin" component={SignIn} />
           <Route path="/Aboutus" component={Aboutus} />
           <Route path="/auth/login" component={Login} />
-          <Route path="/course/:name" component={Video} />
+          <Route path="/course" component={Video} />
           <Route exact path="/" component={Home} />
           <Route component={NotFound} />
         </div>

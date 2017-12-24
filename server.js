@@ -50,6 +50,7 @@ app.use('/graphql', expressGraphQL({
 
 //要放在passport之下
 require('./routes/auth')(app);
+require('./routes/video')(app);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
