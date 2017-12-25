@@ -36,6 +36,10 @@ class LoginForm extends Component {
         <AuthForm 
           errors={ this.state.errors }
           onSubmit={ this.onSubmit.bind(this)} />
+        <div className="row">
+          Login with <a href="/auth/google">Google</a> or{' '}
+          <a href="/auth/facebook">Facebook</a>
+        </div>
       </div>
     );
   }

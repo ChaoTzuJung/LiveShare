@@ -15,48 +15,68 @@ class Header2 extends Component {
     });
   }
 
-  renderButtons() {
-    const { loading, current_user } = this.props.data;
+  // renderButtons() {
+  //   const { loading, current_user } = this.props.data;
 
-    if(loading) { return <div />; }
+  //   if(loading) { return <div />; }
 
-    if(current_user) {
-      return (
-        <li>
-          <a onClick={this.onLogoutClick.bind(this)}>
-            Logout
-          </a>
-        </li>
-      )
-    } else {
-      return (
-        <div>
-          <li>
-            <Link to="/signup">SignUp</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-        </div>
-      )
-    }
-  }
+  //   if(current_user) {
+  //     return (
+  //       <li>
+  //         <a onClick={this.onLogoutClick.bind(this)}>
+  //           Logout
+  //         </a>
+  //       </li>
+  //     )
+  //   } else {
+  //     return (
+  //       <div>
+  //         <li>
+  //           <Link to="/signup">SignUp</Link>
+  //         </li>
+  //         <li>
+  //           <Link to="/login">Login</Link>
+  //         </li>
+  //       </div>
+  //     )
+  //   }
+  // }
 
   renderContent() {
-    switch (this.props.auth) {
+    console.log(this.props);
+    const { loading, current_user } = this.props.data;
+    if(loading) { return <div />; }
+    
+    switch (this.props.auth || current_user) {
       case null:
-        return;
+        return(
+          <div>
+            <li>
+              <Link className="dropdown-button grey-text text-darken-4 item" to="/auth/login">
+                Sign In
+              </Link>
+            </li>
+            <li>
+              <Link className="dropdown-button grey-text text-darken-4 item" data-activates="comp-menu" data-beloworigin="true" data-constrainwidth="false" to="/auth/signup">Sign up<i className="material-icons right icon-grey-darken-4">arrow_drop_down</i></Link>
+            </li>
+          </div>
+        )
       case false:
         return(
-          <li>
-            <Link className="dropdown-button grey-text text-darken-4 item" to="/auth/login">
-              Sign In
-            </Link>
-          </li> 
+          <div>
+            <li>
+              <Link className="dropdown-button grey-text text-darken-4 item" to="/auth/login">
+                Sign In
+              </Link>
+            </li>
+            <li>
+              <Link className="dropdown-button grey-text text-darken-4 item" data-activates="comp-menu" data-beloworigin="true" data-constrainwidth="false" to="/auth/signup">Sign up<i className="material-icons right icon-grey-darken-4">arrow_drop_down</i></Link>
+            </li>
+          </div>
         )
       default:
         return (
-          <li><a className="dropdown-button grey-text text-darken-4 item" href="/api/logout">Logout</a></li> 
+          <li><a className="dropdown-button grey-text text-darken-4 item" href="/api/logout" onClick={this.onLogoutClick.bind(this)}>Logout</a></li> 
         )
     }
   }
@@ -128,9 +148,6 @@ class Header2 extends Component {
             {/* 右邊的按鈕 */}
             <ul className="right hide-on-med-and-down">
               {this.renderContent()}
-              <li>
-                <Link className="dropdown-button grey-text text-darken-4 item" data-activates="comp-menu" data-beloworigin="true" data-constrainwidth="false" to="/auth/signup">Sign up<i className="material-icons right icon-grey-darken-4">arrow_drop_down</i></Link>
-              </li>
             </ul>
             {/* Sign up button dropdown for comp */}
             <ul id="comp-menu" className="dropdown-content">

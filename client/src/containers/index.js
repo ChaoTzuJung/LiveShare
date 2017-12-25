@@ -23,6 +23,7 @@ import Video from '../containers/Home/components/Media';
 import SignIn from '../containers/Home/components/SignIn';
 import LoginForm from '../containers/Home/components/LoginForm';
 import SignupForm from '../containers/Home/components/SignupForm/SignupForm';
+import requireAuth from '../../src/containers/Home/Hoc/requireAuth';
 import Contactus from '../containers/Home/Contactus';
 
 class Main extends Component {
