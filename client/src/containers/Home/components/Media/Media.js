@@ -14,7 +14,6 @@ class Media extends Component {
   }
   
   render() {
-    console.log(fetchVideo)
     return (
       <div>
         <Player playsInline poster="/assets/poster.png">

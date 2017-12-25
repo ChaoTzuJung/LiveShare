@@ -17,10 +17,12 @@ import '../../node_modules/materialize-css/dist/js/materialize.min.js';
 // import relative path
 import Login from './Home/Login';
 import Aboutus from './Home/Aboutus';
-import NotFound from './NotFound'
+import NotFound from './NotFound';
 import Home from './Home';
-import Video from '../containers/Home/components/Media'
+import Video from '../containers/Home/components/Media';
 import SignIn from '../containers/Home/components/SignIn';
+import LoginForm from '../containers/Home/components/LoginForm';
+import SignupForm from '../containers/Home/components/SignupForm/SignupForm';
 import Contactus from '../containers/Home/Contactus';
 
 class Main extends Component {
@@ -31,9 +33,10 @@ class Main extends Component {
     return(
       <Router>
         <div>
-          <Route path="/auth/signin" component={SignIn} />
+          {/* <Route path="/auth/signin" component={SignIn} /> */}
           <Route path="/Aboutus" component={Aboutus} />
-          <Route path="/auth/login" component={Login} />
+          <Route path="/auth/login" component={LoginForm} />
+          <Route path="/auth/signup" component={SignupForm} />
           <Route path="/course" component={Video} />
           <Route exact path="/" component={Home} />
           <Route component={NotFound} />

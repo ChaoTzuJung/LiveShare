@@ -1,12 +1,47 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import { findDOMNode } from 'react-dom';
+import { graphql } from 'react-apollo';
 import { connect } from 'react-redux';
+import query from '../../../..//queries/CurrentUser'
+import mutation from '../../../../mutations/Logout'
 import SideNav from '../Sidenav/Sidenav';
 import Logo from '../../../../static/images/liveshare.png';
 import './Header2.less';
 
 class Header2 extends Component {
+  onLogoutClick() {
+    this.props.mutate({
+      refetchQueries: [{ query: query }]
+    });
+  }
+
+  renderButtons() {
+    const { loading, current_user } = this.props.data;
+
+    if(loading) { return <div />; }
+
+    if(current_user) {
+      return (
+        <li>
+          <a onClick={this.onLogoutClick.bind(this)}>
+            Logout
+          </a>
+        </li>
+      )
+    } else {
+      return (
+        <div>
+          <li>
+            <Link to="/signup">SignUp</Link>
+          </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+        </div>
+      )
+    }
+  }
+
   renderContent() {
     switch (this.props.auth) {
       case null:
@@ -14,7 +49,7 @@ class Header2 extends Component {
       case false:
         return(
           <li>
-            <Link className="dropdown-button grey-text text-darken-4 item" to="/auth/signin">
+            <Link className="dropdown-button grey-text text-darken-4 item" to="/auth/login">
               Sign In
             </Link>
           </li> 
@@ -65,7 +100,6 @@ class Header2 extends Component {
   }
 
   render() {
-    console.log(this.props.auth);
     const headerLogoImg = {
       backgroundImage: `url(${Logo})`
     };
@@ -95,7 +129,7 @@ class Header2 extends Component {
             <ul className="right hide-on-med-and-down">
               {this.renderContent()}
               <li>
-                <a className="dropdown-button grey-text text-darken-4 item" data-activates="comp-menu" data-beloworigin="true" data-constrainwidth="false">Sign up<i className="material-icons right icon-grey-darken-4">arrow_drop_down</i></a>
+                <Link className="dropdown-button grey-text text-darken-4 item" data-activates="comp-menu" data-beloworigin="true" data-constrainwidth="false" to="/auth/signup">Sign up<i className="material-icons right icon-grey-darken-4">arrow_drop_down</i></Link>
               </li>
             </ul>
             {/* Sign up button dropdown for comp */}
@@ -153,4 +187,8 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(Header2)
+let ComponentWithData = graphql(mutation)(
+  graphql(query)(Header2)
+);
+
+export default connect(mapStateToProps)(ComponentWithData)
