@@ -1,0 +1,34 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "uuid": 1,
+      "url": "https://cdn.filestackcontent.com/dWbyg4oUQBVH8Rznqkfl",
+      "title": "A day at Work",
+      "author": "Sam",
+      "views": 1000,
+      "uploadAt": "1",
+      "converted": true
+    },
+    {
+      "id": 2,
+      "uuid": 2,
+      "url": "https://cdn.filestackcontent.com/Bu9TkaFTvSddg6c1PaWf",
+      "title": "Synthesizer",
+      "author": "Andrew",
+      "views": 145000,
+      "uploadAt": "12",
+      "converted": true
+    },
+    {
+      "id": 3,
+      "uuid": 3,
+      "url": "https://cdn.filestackcontent.com/XD3TCygEQSyo8d3C7PQ3",
+      "title": "Wasp on Wood",
+      "author": "Sam",
+      "views": 600,
+      "uploadAt": "15",
+      "converted": true
+    }
+  ]
+}

@@ -8,15 +8,28 @@ import Section from './components/Section';
 import DetailPage from './components/DetailPage';
 import FlipCard from './components/FlipCard';
 import Footer from './components/Footer';
-
+import { API } from './config'
+import VideosList from './components/VideoList';
 import webJson from './webData.json';
 import member from './member.json';
 import './Home.less';
 
 class Home extends Component {
+  constructor (props) {
+    super(props);
+    // Set the videoList to empty array
+    this.state = { videosList: [] };
+  }
   static propTypes = {
     history: PropTypes.object,
     match: PropTypes.object,
+  }
+
+  componentDidMount () {
+    // Calls GET /api/v1/videos to populate videosList
+    return fetch(API)
+      .then(response => response.json())
+      .then(videosList => this.setState({ videosList }));
   }
 
   goDetail = (type) => {
@@ -29,13 +42,14 @@ class Home extends Component {
 
   render() {
     const { isExact } = this.props.match;
-
+    const { videosList } = this.state;
     document.getElementsByTagName('html')[0].style.overflow = isExact ? 'auto' : 'hidden';
 
     return (
       <div id="pageHome">
 
         <Slider />
+        <VideosList videos={videosList} />
         <div>
           {
             webJson.map((sectionData, index) =>

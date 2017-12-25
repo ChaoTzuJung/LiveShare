@@ -51,7 +51,10 @@ class Header extends Component {
         )
       default:
         return (
-          <li><a className="dropdown-button grey-text text-darken-4 item" href="/api/logout" onClick={this.onLogoutClick.bind(this)}>Logout</a></li> 
+          <div>
+            <li><a className="dropdown-button grey-text text-darken-4 item" href="/api/logout" onClick={this.onLogoutClick.bind(this)}>Logout</a></li>
+            <li><Link className="dropdown-button grey-text text-darken-4 item" to="/add">Upload</Link></li> 
+          </div>
         )
     }
   }

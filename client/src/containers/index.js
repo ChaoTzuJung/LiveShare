@@ -26,6 +26,8 @@ import SignupForm from '../containers/Home/components/SignupForm/SignupForm';
 import requireAuth from '../../src/containers/Home/Hoc/requireAuth';
 import Contactus from '../containers/Home/Contactus';
 import Header from '../containers/Home/components/Header';
+import Add from '../containers/Home/components/Add';
+
 
 class Main extends Component {
   componentDidMount() {
@@ -40,6 +42,7 @@ class Main extends Component {
           <Route path="/login" component={LoginForm} />
           <Route path="/signup" component={SignupForm} />
           <Route path="/course" component={Media} />
+          <Route path="/add" component={Add} />
           <Route exact path="/" component={Home} />
           {/* <Route component={NotFound} /> */}
         </div>

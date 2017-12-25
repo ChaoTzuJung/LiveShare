@@ -9,6 +9,7 @@ import './Section.less';
 
 
 export default class Section extends Component {
+
   static propTypes = {
     reverse: PropTypes.bool,
     title: PropTypes.string,
@@ -17,9 +18,6 @@ export default class Section extends Component {
     desc: PropTypes.string,
     goDetail: PropTypes.func,
   }
-
-
-
 
   render() {
     const { reverse, title, dataList, id, desc, goDetail } = this.props;
