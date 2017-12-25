@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import FlipCard from './components/FlipCard';
 import Footer from './components/Footer/Footer';
-import Collapsible from './components/Collapsible/';
+import Collapsible from './components/Collapsible';
 import member from './member.json';
 import './Aboutus.less';
 
