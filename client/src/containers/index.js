@@ -25,6 +25,7 @@ import LoginForm from '../containers/Home/components/LoginForm';
 import SignupForm from '../containers/Home/components/SignupForm/SignupForm';
 import requireAuth from '../../src/containers/Home/Hoc/requireAuth';
 import Contactus from '../containers/Home/Contactus';
+import Header from '../containers/Home/components/Header';
 
 class Main extends Component {
   componentDidMount() {
@@ -34,13 +35,13 @@ class Main extends Component {
     return(
       <Router>
         <div>
-          {/* <Route path="/auth/signin" component={SignIn} /> */}
-          <Route path="/Aboutus" component={Aboutus} />
-          <Route path="/auth/login" component={LoginForm} />
-          <Route path="/auth/signup" component={SignupForm} />
+          <Header />
+          <Route path="/aboutus" component={Aboutus} />
+          <Route path="/login" component={LoginForm} />
+          <Route path="/signup" component={SignupForm} />
           <Route path="/course" component={Video} />
           <Route exact path="/" component={Home} />
-          <Route component={NotFound} />
+          {/* <Route component={NotFound} /> */}
         </div>
       </Router>
     );

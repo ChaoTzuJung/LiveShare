@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import { AnimatedRoute } from 'react-router-transition';
 import { Link, withRouter } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
-
-import Header from './components/Header/Header2';
 import Slider from './components/Slider';
 import Section from './components/Section';
 import DetailPage from './components/DetailPage';
@@ -36,7 +34,7 @@ class Home extends Component {
 
     return (
       <div id="pageHome">
-        <Header />
+
         <Slider />
         <div>
           {
