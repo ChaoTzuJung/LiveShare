@@ -8,6 +8,8 @@ import SideNav from '../Sidenav/Sidenav';
 import Logo from '../../../../static/images/liveshare.png';
 import './Header.less';
 
+{/* <i className="material-icons right icon-grey-darken-4">arrow_drop_down</i> */}
+
 class Header extends Component {
   onLogoutClick() {
     this.props.mutate({
@@ -30,7 +32,7 @@ class Header extends Component {
               </Link>
             </li>
             <li>
-              <Link className="dropdown-button grey-text text-darken-4 item" data-activates="comp-menu" data-beloworigin="true" data-constrainwidth="false" to="/signup">Sign up<i className="material-icons right icon-grey-darken-4">arrow_drop_down</i></Link>
+              <Link className="dropdown-button grey-text text-darken-4 item" data-activates="comp-menu" data-beloworigin="true" data-constrainwidth="false" to="/signup">Sign up</Link>
             </li>
           </div>
         )
@@ -43,7 +45,7 @@ class Header extends Component {
               </Link>
             </li>
             <li>
-              <Link className="dropdown-button grey-text text-darken-4 item" data-activates="comp-menu" data-beloworigin="true" data-constrainwidth="false" to="/signup">Sign up<i className="material-icons right icon-grey-darken-4">arrow_drop_down</i></Link>
+              <Link className="dropdown-button grey-text text-darken-4 item" data-activates="comp-menu" data-beloworigin="true" data-constrainwidth="false" to="/signup">Sign up</Link>
             </li>
           </div>
         )

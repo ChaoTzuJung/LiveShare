@@ -19,7 +19,7 @@ import Login from './Home/Login';
 import Aboutus from './Home/Aboutus';
 import NotFound from './NotFound';
 import Home from './Home';
-import Video from '../containers/Home/components/Media';
+import Media from '../containers/Home/components/Media';
 import SignIn from '../containers/Home/components/SignIn';
 import LoginForm from '../containers/Home/components/LoginForm';
 import SignupForm from '../containers/Home/components/SignupForm/SignupForm';
@@ -39,7 +39,7 @@ class Main extends Component {
           <Route path="/aboutus" component={Aboutus} />
           <Route path="/login" component={LoginForm} />
           <Route path="/signup" component={SignupForm} />
-          <Route path="/course" component={Video} />
+          <Route path="/course" component={Media} />
           <Route exact path="/" component={Home} />
           {/* <Route component={NotFound} /> */}
         </div>
